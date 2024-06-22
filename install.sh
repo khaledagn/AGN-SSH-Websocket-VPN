@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Constants
-PYTHON_SCRIPT_URL="https://www.khaledagn.com/agn_websocket.py"
+PYTHON_SCRIPT_URL="https://github.com/khaledagn/AGN-SSH-Websocket-VPN/raw/main/agn_websocket.py"
 INSTALL_DIR="/opt/agn_websocket"
 SYSTEMD_SERVICE_FILE="/etc/systemd/system/agn-websocket.service"
 PYTHON_BIN=$(command -v python3)  # Ensure python3 is available
