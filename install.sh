@@ -27,7 +27,7 @@ download_agn_websocket() {
 # Function to install agnws_manager.sh script and set it as executable
 install_agnws_manager() {
     echo "Installing $AGN_MANAGER_SCRIPT..."
-    curl -o "$INSTALL_DIR/$AGN_MANAGER_SCRIPT" "https://www.khaledagn.com/$AGN_MANAGER_SCRIPT"
+    curl -o "$INSTALL_DIR/$AGN_MANAGER_SCRIPT" "https://github.com/khaledagn/AGN-SSH-Websocket-VPN/raw/main/agnws_manager.sh"
     chmod +x "$INSTALL_DIR/$AGN_MANAGER_SCRIPT"
     ln -s "$INSTALL_DIR/$AGN_MANAGER_SCRIPT" "$AGN_MANAGER_LINK"
     convert_to_unix_line_endings "$AGN_MANAGER_PATH"
