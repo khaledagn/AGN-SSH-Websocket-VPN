@@ -13,21 +13,21 @@ AGN_MANAGER_LINK="/usr/local/bin/websocket"
 install_required_packages() {
     echo "Installing required packages..."
     apt-get update
-    apt-get install -y python3-pip dos2unix curl
+    apt-get install -y python3-pip dos2unix wget
     pip3 install --upgrade pip
     pip3 install websocket-client  # Adjust with other required packages as needed
 }
 
-# Function to download Python proxy script
+# Function to download Python proxy script using wget
 download_agn_websocket() {
     echo "Downloading Python proxy script from $PYTHON_SCRIPT_URL..."
-    curl -o "$INSTALL_DIR/agn_websocket.py" "$PYTHON_SCRIPT_URL"
+    wget -O "$INSTALL_DIR/agn_websocket.py" "$PYTHON_SCRIPT_URL"
 }
 
-# Function to install agnws_manager.sh script and set it as executable
+# Function to install agnws_manager.sh script and set it as executable using wget
 install_agnws_manager() {
     echo "Installing $AGN_MANAGER_SCRIPT..."
-    curl -o "$AGN_MANAGER_PATH" "https://github.com/khaledagn/AGN-SSH-Websocket-VPN/raw/main/agnws_manager.sh"
+    wget -O "$AGN_MANAGER_PATH" "https://github.com/khaledagn/AGN-SSH-Websocket-VPN/raw/main/agnws_manager.sh"
     chmod +x "$AGN_MANAGER_PATH"
     ln -sf "$AGN_MANAGER_PATH" "$AGN_MANAGER_LINK"
     convert_to_unix_line_endings "$AGN_MANAGER_PATH"
@@ -44,7 +44,7 @@ convert_to_unix_line_endings() {
 start_systemd_service() {
     echo "Starting agn-websocket service..."
     systemctl start agn-websocket
-    systemctl status agn-websocket --no-pager
+    systemctl status agn-websocket --no-pager  # Optionally, show status after starting
 }
 
 # Function to install systemd service
