@@ -20,12 +20,12 @@ EOF
 show_menu() {
    clear
    display_banner
-   echo "VPS Manager Menu"
+   echo "Websocket VPN Manager Menu"
    echo "1. Check Server Status"
    echo "2. Manage SSH Users"
    echo "3. Change Listening Port"
    echo "4. Restart WebSocket Service"
-   echo "5. Uninstall Python Proxy Script"
+   echo "5. Uninstall Websocket"
    echo "6. Server Information"
    echo "7. Exit"
 }
