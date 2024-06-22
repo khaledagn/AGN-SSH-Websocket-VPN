@@ -51,7 +51,8 @@ Follow these steps to install and use the WebSocket Service Manager:
 ### Usage
 After installation, run the WebSocket Service Manager using:
 
-     ```bash websocket menu
+     ```bash
+     websocket menu
 
 Follow the menu options displayed on-screen to manage your WebSocket service effectively.
 
