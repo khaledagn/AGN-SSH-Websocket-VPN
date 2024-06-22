@@ -50,7 +50,7 @@ After installation, run the WebSocket Service Manager using:
 Follow the menu options displayed on-screen to manage your WebSocket service effectively.
 
 ### Screenshots
-![WebSocket VPN Manager](screenshot.png)
+![WebSocket VPN Manager](screenshot.PNG)
 
 
 
