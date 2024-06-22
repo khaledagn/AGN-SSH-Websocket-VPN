@@ -54,7 +54,7 @@ Follow the menu options displayed on-screen to manage your WebSocket service eff
 
 
 
-### Screenshots Support and Maintenance
+### Support and Maintenance
 
 This project is maintained by Khaled AGN. For updates and support, visit:
 
