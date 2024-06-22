@@ -2,6 +2,7 @@
 
 # Constants
 PYTHON_SCRIPT_URL="https://github.com/khaledagn/AGN-SSH-Websocket-VPN/raw/main/agn_websocket.py"
+AGN_MANAGER_SCRIPT_URL="https://github.com/khaledagn/AGN-SSH-Websocket-VPN/raw/main/agnws_manager.sh"
 INSTALL_DIR="/opt/agn_websocket"
 SYSTEMD_SERVICE_FILE="/etc/systemd/system/agn-websocket.service"
 PYTHON_BIN=$(command -v python3)  # Ensure python3 is available
@@ -24,10 +25,10 @@ download_agn_websocket() {
     wget -O "$INSTALL_DIR/agn_websocket.py" "$PYTHON_SCRIPT_URL"
 }
 
-# Function to install agnws_manager.sh script and set it as executable using wget
-install_agnws_manager() {
-    echo "Installing $AGN_MANAGER_SCRIPT..."
-    wget -O "$AGN_MANAGER_PATH" "https://github.com/khaledagn/AGN-SSH-Websocket-VPN/raw/main/agnws_manager.sh"
+# Function to download agnws_manager.sh script using wget
+download_agnws_manager() {
+    echo "Downloading $AGN_MANAGER_SCRIPT from $AGN_MANAGER_SCRIPT_URL..."
+    wget -O "$AGN_MANAGER_PATH" "$AGN_MANAGER_SCRIPT_URL"
     chmod +x "$AGN_MANAGER_PATH"
     ln -sf "$AGN_MANAGER_PATH" "$AGN_MANAGER_LINK"
     convert_to_unix_line_endings "$AGN_MANAGER_PATH"
@@ -112,8 +113,8 @@ main() {
     # Download Python proxy script
     download_agn_websocket
 
-    # Install agnws_manager.sh script
-    install_agnws_manager
+    # Download agnws_manager.sh script
+    download_agnws_manager
 
     # Install systemd service
     install_systemd_service
