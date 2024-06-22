@@ -45,14 +45,20 @@ Follow these steps to install and use the WebSocket Service Manager:
 ### Usage
 After installation, run the WebSocket Service Manager using:
 
-```bash
-websocket menu
+     ```bash websocket menu
 
-Follow the on-screen menu options to manage your WebSocket service.
+Follow the menu options displayed on-screen to manage your WebSocket service effectively.
+
+### Screenshots
+![WebSocket VPN Manager](screenshot.png)
 
 
 
-This project is maintained by Khaled AGN. Visit on Telegram t.me@khaledagn for updates and support.
+### Screenshots Support and Maintenance
+
+This project is maintained by Khaled AGN. For updates and support, visit:
+
+Telegram: t.me/khaledagn
 
 
 
