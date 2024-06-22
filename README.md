@@ -2,6 +2,12 @@
 
 WebSocket VPN Manager is a bash script utility designed to manage a Python-based WebSocket proxy service on Linux servers. It provides a menu-driven interface for checking server status, managing SSH users, changing listening ports, restarting services, and uninstalling the proxy script.
 
+# Client app AGN INJECTOR
+
+<p>
+<a href="https://play.google.com/store/apps/details?id=com.agn.injector"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="100"></a>
+</p>
+
 ## Features
 
 - **Check Server Status:** Monitor the status of the WebSocket service.
@@ -58,7 +64,13 @@ Follow the menu options displayed on-screen to manage your WebSocket service eff
 
 This project is maintained by Khaled AGN. For updates and support, visit:
 
-Telegram: t.me/khaledagn
+<ul>
+ <li>TELEGRAM CHANNEL: https://t.me/khaledagn</li>
+ <li>FACEBOOK: https://www.facebook.com/khaledagn.me</li>
+ <li>INSTAGRAM: https://www.instagram.com/khaledagn</li>
+ <li>TWITTER: https://www.twitter.com/khaled_agn</li>
+ 
+ </ul>
 
 
 
